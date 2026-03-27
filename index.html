@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Starbucks — Crafted beverages, premium blends, and unforgettable flavors. Discover our signature Frappuccinos and seasonal favorites.">
+  <meta property="og:title" content="Starbucks — It's Not Just Coffee">
+  <meta property="og:description" content="Discover handcrafted Frappuccinos and seasonal favorites made with care.">
+  <meta property="og:type" content="website">
+  <title>Starbucks — It's Not Just Coffee</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Viga&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <!-- =================== NAVBAR =================== -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#" class="nav-logo" aria-label="Starbucks Home">
+        <img src="img/logo.png" alt="Starbucks logo" width="50" height="50">
+      </a>
+
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </button>
+
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#hero" class="nav-link active">Home</a></li>
+        <li><a href="#menu" class="nav-link">Menu</a></li>
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- =================== HERO =================== -->
+  <section class="hero" id="hero">
+    <div class="hero-bg-circle"></div>
+    <div class="hero-particles">
+      <span class="particle"></span>
+      <span class="particle"></span>
+      <span class="particle"></span>
+      <span class="particle"></span>
+      <span class="particle"></span>
+      <span class="particle"></span>
+    </div>
+
+    <div class="hero-container">
+      <div class="hero-content reveal-left">
+        <p class="hero-tag">New Seasonal Favorites</p>
+        <h1 class="hero-title">
+          It's not just Coffee<br>
+          It's <span class="highlight" id="brandHighlight">Starbucks</span>
+        </h1>
+        <p class="hero-desc" id="heroDesc">Experience the perfect blend of rich flavors and artisan craftsmanship in every sip. Our signature Matcha Crème Frappuccino — bold, refreshing, unforgettable.</p>
+        <div class="hero-actions">
+          <a href="#menu" class="btn btn-primary">Explore Menu</a>
+          <a href="#about" class="btn btn-outline">Our Story</a>
+        </div>
+        <div class="hero-stats">
+          <div class="stat">
+            <span class="stat-number" data-target="35000">0</span>+
+            <span class="stat-label">Stores Worldwide</span>
+          </div>
+          <div class="stat">
+            <span class="stat-number" data-target="400">0</span>B+
+            <span class="stat-label">Cups Served Daily</span>
+          </div>
+          <div class="stat">
+            <span class="stat-number" data-target="80">0</span>+
+            <span class="stat-label">Countries</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-product reveal-right">
+        <div class="product-glow" id="productGlow"></div>
+        <img src="img/img1.png" alt="Matcha Crème Frappuccino" class="product-img" id="productImg">
+      </div>
+    </div>
+
+    <!-- Drink Selector -->
+    <div class="drink-selector reveal-up">
+      <button class="drink-thumb active" data-drink="0" aria-label="Select Matcha Crème Frappuccino">
+        <img src="img/thumb1.png" alt="Matcha Crème">
+        <span class="thumb-label">Matcha Crème</span>
+      </button>
+      <button class="drink-thumb" data-drink="1" aria-label="Select Sakura Blossom Frappuccino">
+        <img src="img/thumb2.png" alt="Sakura Blossom">
+        <span class="thumb-label">Sakura Blossom</span>
+      </button>
+      <button class="drink-thumb" data-drink="2" aria-label="Select Unicorn Frappuccino">
+        <img src="img/thumb3.png" alt="Unicorn Frapp">
+        <span class="thumb-label">Unicorn Frapp</span>
+      </button>
+    </div>
+  </section>
+
+  <!-- =================== MENU =================== -->
+  <section class="menu" id="menu">
+    <div class="section-container">
+      <p class="section-tag reveal-up">Our Signature Collection</p>
+      <h2 class="section-title reveal-up">Handcrafted Favorites</h2>
+
+      <div class="menu-grid">
+        <article class="menu-card reveal-up" style="--delay: 0.1s">
+          <div class="card-img-wrap" style="--card-accent: #00704A">
+            <img src="img/img1.png" alt="Matcha Crème Frappuccino" loading="lazy">
+          </div>
+          <div class="card-body">
+            <span class="card-badge">Featured</span>
+            <h3>Matcha Crème</h3>
+            <p>Smooth matcha sweetness blended with milk and ice, topped with whipped cream.</p>
+            <div class="card-footer">
+              <span class="card-price">$5.75</span>
+              <button class="card-btn" aria-label="Order Matcha Crème">Order Now</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="menu-card reveal-up" style="--delay: 0.25s">
+          <div class="card-img-wrap" style="--card-accent: #E8A0BF">
+            <img src="img/img2.png" alt="Sakura Blossom Frappuccino" loading="lazy">
+          </div>
+          <div class="card-body">
+            <span class="card-badge seasonal">Seasonal</span>
+            <h3>Sakura Blossom</h3>
+            <p>Cherry blossom-inspired strawberry delight with white chocolate shavings.</p>
+            <div class="card-footer">
+              <span class="card-price">$6.25</span>
+              <button class="card-btn" aria-label="Order Sakura Blossom">Order Now</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="menu-card reveal-up" style="--delay: 0.4s">
+          <div class="card-img-wrap" style="--card-accent: #C154C1">
+            <img src="img/img3.png" alt="Unicorn Frappuccino" loading="lazy">
+          </div>
+          <div class="card-body">
+            <span class="card-badge limited">Limited</span>
+            <h3>Unicorn Frappuccino</h3>
+            <p>A magical color-changing blend of mango, blue drizzle, and fairy-tale sweetness.</p>
+            <div class="card-footer">
+              <span class="card-price">$6.50</span>
+              <button class="card-btn" aria-label="Order Unicorn Frappuccino">Order Now</button>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- =================== ABOUT =================== -->
+  <section class="about" id="about">
+    <div class="section-container about-grid">
+      <div class="about-visual reveal-left">
+        <div class="about-img-stack">
+          <div class="about-img-card img-1">
+            <img src="img/img1.png" alt="Signature drink" loading="lazy">
+          </div>
+          <div class="about-img-card img-2">
+            <img src="img/img2.png" alt="Seasonal creation" loading="lazy">
+          </div>
+        </div>
+      </div>
+      <div class="about-content reveal-right">
+        <p class="section-tag">Since 1971</p>
+        <h2 class="section-title">Every Cup Tells a Story</h2>
+        <p class="about-text">
+          From a single store in Seattle's Pike Place Market to more than 35,000 stores in 80 countries, Starbucks has been crafting the finest coffee and beverages for over 50 years.
+        </p>
+        <p class="about-text">
+          We source the best beans, handcraft every drink, and create the kind of warm, welcoming moments that make every visit feel special. Because it's not just coffee — it's the experience.
+        </p>
+        <div class="about-features">
+          <div class="feature">
+            <div class="feature-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2a10 10 0 1 0 10 10A10 10 0 0 0 12 2z"/><path d="m9 12 2 2 4-4"/></svg>
+            </div>
+            <span>100% Ethically Sourced</span>
+          </div>
+          <div class="feature">
+            <div class="feature-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2a10 10 0 1 0 10 10A10 10 0 0 0 12 2z"/><path d="m9 12 2 2 4-4"/></svg>
+            </div>
+            <span>Handcrafted Daily</span>
+          </div>
+          <div class="feature">
+            <div class="feature-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2a10 10 0 1 0 10 10A10 10 0 0 0 12 2z"/><path d="m9 12 2 2 4-4"/></svg>
+            </div>
+            <span>Community First</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =================== CONTACT / CTA =================== -->
+  <section class="contact" id="contact">
+    <div class="section-container contact-inner">
+      <div class="contact-content reveal-up">
+        <p class="section-tag">Join the Experience</p>
+        <h2 class="section-title">Find Your Nearest Store</h2>
+        <p class="contact-desc">Visit any of our 35,000+ locations worldwide. Whether it's your morning ritual or a sweet afternoon treat, we're always here for you.</p>
+        <div class="contact-actions">
+          <a href="#" class="btn btn-primary btn-lg">Find a Store</a>
+          <a href="#" class="btn btn-outline btn-lg">Order Online</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =================== FOOTER =================== -->
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-brand">
+        <img src="img/logo.png" alt="Starbucks logo" width="60" height="60">
+        <p>Inspiring and nurturing the human spirit — one person, one cup, and one neighborhood at a time.</p>
+      </div>
+      <div class="footer-links">
+        <div class="footer-col">
+          <h4>Explore</h4>
+          <ul>
+            <li><a href="#hero">Home</a></li>
+            <li><a href="#menu">Menu</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Locations</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Company</h4>
+          <ul>
+            <li><a href="#">Careers</a></li>
+            <li><a href="#">Sustainability</a></li>
+            <li><a href="#">Press</a></li>
+            <li><a href="#">Investor Relations</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Connect</h4>
+          <div class="social-links">
+            <a href="#" aria-label="Facebook" rel="noopener noreferrer">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+            </a>
+            <a href="#" aria-label="Instagram" rel="noopener noreferrer">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 1 0 0 12.324 6.162 6.162 0 0 0 0-12.324zM12 16a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm6.406-11.845a1.44 1.44 0 1 0 0 2.881 1.44 1.44 0 0 0 0-2.881z"/></svg>
+            </a>
+            <a href="#" aria-label="Twitter / X" rel="noopener noreferrer">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2025 Starbucks Coffee Company. All Rights Reserved. <span class="footer-note">Concept redesign — not affiliated.</span></p>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
